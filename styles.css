@@ -1,0 +1,108 @@
+/* General Reset & Typography */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9fb;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #1a365d; /* Deep lake blue */
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+nav a[aria-current="page"] {
+  border-bottom: 2px solid #63b3ed;
+}
+
+/* Main Layout */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c5282;
+  border-bottom: 4px solid #63b3ed;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2b6cb0;
+  font-style: italic;
+  margin-top: 50px;
+  padding: 20px;
+  background: #ebf8ff;
+  border-radius: 8px;
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Emphasis & Callouts */
+#lake-elevation {
+  font-weight: bold;
+  color: #e53e3e; /* Warning red */
+  font-size: 1.2rem;
+}
+
+blockquote {
+  margin: 30px 0;
+  padding: 20px 40px;
+  background: #edf2f7;
+  border-left: 5px solid #4a5568;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+}
+
+em {
+  display: block;
+  font-size: 0.9rem;
+  color: #718096;
+  margin-top: 10px;
+}
+
+/* Chart container is already handled with inline styles in your HTML, 
+   but adding responsiveness here just in case */
+canvas {
+  max-width: 100%;
+  height: auto !important;
+}
